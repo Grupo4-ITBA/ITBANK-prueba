@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f7f7dd;
+}
+
+.encabezado{
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(108 99 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo{
+    background-color: aliceblue;
+    height: 40px;
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+}
+
+
+
+.barra {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+    
+}
+
+
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recordar{
+    display: flex;
+    gap: 7px;
+}
+
+
+
+
+
+
+
+
+
+/* 
+h2 {
+    
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 166px;
+}
+
+form {
+    
+    display: block;
+    position: relative;
+    top: 80px;
+}
+
+#email {
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    display:block;
+   
+}
+
+#email:hover {
+    background-color: rgba(245, 236, 220, 0.342);
+}
+
+#password:hover {
+    background-color: rgba(245, 236, 220, 0.342);;
+}
+
+
+
+#password {
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    display:block;
+    
+}
+
+#ingresar {
+
+    font-family: 'PT Serif', serif;
+    color: black;
+    font-size: 30px;
+    padding: 11px;
+    display:block;
+    border-radius: 5px ;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    bottom: -20px;
+    
+}
+
+#ingresar:hover {
+    background-color: rgb(126, 190, 103);
+}
+
+
+
+.olvido {
+    font-family: 'Inconsolata', monospace;
+    color: rgb(199, 133, 238);
+    border: transparent;
+    text-align: center;
+    padding: 5px;
+    display: block;
+    position: relative;
+    bottom: -20px;
+} */
