@@ -10,94 +10,59 @@
   <script src="https://kit.fontawesome.com/bfdb86cd47.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 
 <body>
-  <!--NUEVO NAV-->
-
   <!-- Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
     <div class="container-fluid justify-content-between align-content-center">
       <!-- Left elements -->
       <div class="d-flex">
-        <!-- Brand -->
-        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="./index.html">
           <img src="./img/logo.png" height="60" alt="MDB Logo" loading="lazy" style="margin-top: 2px;" />
         </a>
-        <!-- Search form -->
-        <form class="input-group w-auto my-auto d-none d-sm-flex">
-          <input autocomplete="off" type="search" class="form-control rounded" placeholder="Buscar"
-            style="min-width: 125px;" />
-          <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
-        </form>
       </div>
-      <!-- Left elements -->
-
-      <!-- Center elements -->
-      <ul class="navbar-nav flex-row d-none d-md-flex">
-        <li class="nav-item me-3 me-lg-1">
-          <a class="nav-link" href="#">
-            <span><i class="fas fa-shopping-bag fa-lg"></i> Empresas</span>
-          </a>
-        </li>
-
-        <li class="nav-item me-3 me-lg-1">
-          <a class="nav-link" href="#">
-            <span><i class="fas fa-users fa-lg"></i> Personas</span>
-          </a>
-        </li>
-      </ul>
-      <a class="nav-link bg-white" href="Homebank/index.html" target="_blank">
-        <button class="btn btn-outline-dark opacity-50 h-25 fs-4" type="submit">Home Banking</button>
-      </a>
-      </li>
-      <!-- Center elements -->
-
+            <!-- Center elements -->
+            <ul class="navbar-nav flex-row d-none d-md-flex">
+              <li class="nav-item me-3 rounded-4 me-lg-1 h-25 bg-info">
+                <button class="btn bg-white rounded-4 bg-opacity-25 h-25 fs-4 text-light"><i class="fas fa-user-tie fa-lg"></i>
+                  Empresas</button>
+              </li>
+              <li class="nav-item me-3 rounded-4 me-lg-1 h-25 bg-info">
+                <button class="btn bg-white rounded-4 bg-opacity-25 h-25 fs-4 text-light"><i class="fas fa-user-tie fa-lg"></i>
+                  Instituciones</button>
+              </li>
+              <li class="nav-item me-3 rounded-4 me-lg-1 bg-info h-25">
+                <button class="btn bg-white rounded-4 bg-opacity-25 h-25 fs-4 text-light"> <span><i class="fas fa-users fa-lg"></i> Personas</span></button>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row d-none d-md-flex">
+              <li class="nav-item me-3 me-lg-1 h-25 bg-info rounded-5">
+                <button class="btn bg-white bg-opacity-25 text-white fs-4 rounded-5"><span class="homebanking"></span><span class="material-symbols-outlined">
+                    login
+                  </span>Home Banking</span></button>
+              </li>
+            </ul>
       <!-- Right elements -->
       <ul class="navbar-nav flex-row">
         <li class="nav-item me-3 me-lg-1">
-          <a class="nav-link d-sm-flex align-items-sm-center" href="#">
-            <img
-              src="https://icon-icons.com/downloadimage.php?id=119052&root=1863/PNG/512/&file=help-outline_119052.png"
-              class="rounded-circle" height="22" alt="Black and White Portrait of a Man" loading="lazy" />
+          <a class="nav-link d-sm-flex align-items-sm-center text-light" href="#">
+            <span class="material-symbols-outlined">
+              help
+              </span>
             <strong class="d-none d-sm-block ms-1">Preguntas frecuentes</strong>
           </a>
         </li>
-        <!--LISTA DESPLEGABLE-->
         <!-- Right elements -->
     </div>
   </nav>
   <!-- Navbar -->
-  <!--
-    <div class="externa">
-      <header class="container-fluid bg-info">
-        <div class="externa_header--menu">
-          <div class="logo">
-            <a href="index.html"
-              ><img class="logo-itbank" src="./img/logo.png" alt="Logo-ITBANK"
-            /></a>
-          </div>
-          <div class="container">
-            <div class="row py-0 m-0">
-              <div class="col-sm-2 col-md-3 col-lg-4 fs-4">
-                <a href="#">Personas</a>
-              </div>
-              <div class="col-sm-2 col-md-3 col-lg-4 fs-4">
-                <a href="#">Empresas</a>
-              </div>
-              <div class="col-sm-2 col-md-3 col-lg-4 fs-2 border-3">
-                <a href="">Home Banking</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-  -->
   <main class="main">
-    <div class="container text-center py-4">
-      <h1 class="display-1">¡Te damos la bienvenida a <span>itbank!</span></h1>
+    <div class="container text-center py-4 bg-info mt-4 rounded-pill bg-opacity-75">
+      <h1 class="display-1 text-white">¡Te damos la bienvenida a <span>itbank!</span></h1>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide m-3 d-block" data-bs-ride="true">
       <div class="carousel-indicators">
@@ -133,24 +98,25 @@
     <br>
     <br>
     <br>
-    <div class="container text-center justify-content-center fs-4">
-      <h2 class="m-2 py-3">¿En qué podemos ayudarte?</h2>
-      <form class="d-flex" role="search">
-        <input class="form-control me-4 fs-3" type="search" placeholder="Escribe aquí" aria-label="Search">
-        <button class="btn btn-outline-success fs-3" type="submit">Buscar</button>
+    <div class="container-fluid text-center justify-content-center fs-4 bg-info bg-opacity-100 rounded-pill">
+      <h2 class="m-2 py-3 text-light">¿En qué podemos ayudarte?</h2>
+    </div>
+    <div class="container text-center justify-content-center fs-4 bg-opacity-100 rounded-pill">
+    <form class="d-flex" role="search">
+        <input class="form-control me-4 fs-3 rounded-pill" type="search" placeholder="Escribe aquí" aria-label="Search">
+        <button class="btn btn-info fs-5 t text-light" type="submit">Buscar</button>
       </form>
     </div>
     <br>
     <br>
-    <div class="container-fluid text-center py-2 bg-info h-50 py-5 m-2">
-      <h2 class="">Solicita tu tarjeta!</h2>
-      <hr>
+    <div class="container-fluid text-center py-2 bg-info h-50 py-5 m-2 rounded-pill">
+      <h2 class="text-light">Solicita tu tarjeta!</h2>
+      <div class="container"><hr></div>
       <br>
-
-      <p class="text-white"> Tenemos grandes beneficios en todo el país pensados para vos. Empezá a disfrutar de nuestras promociones
+      <p class="text-white fs-5"> Tenemos grandes beneficios en todo el país pensados para vos. Empezá a disfrutar de nuestras promociones
         imperdibles!</p>
       <br>
-      <p class="text-white"> Ahora podes pedir tus tarjetas sin salir de tu casa. Ingresá a tu Home Banking y solicitalas!</p>
+      <p class="text-white fs-5"> Ahora podes pedir tus tarjetas sin salir de tu casa. Ingresá a tu Home Banking y solicitalas!</p>
       <br>
       <div class="container d-inline text-center py-2">
         <img src="./img/tarjeta debito.png" alt="Tarjeta de debito">
@@ -163,10 +129,8 @@
     <br>
     <hr>
     <!--PRIMER DESARROLLO-->
-
-
     <div class="clearfix">
-      <img src="./img/team2.jpg" class="col-md-6 float-md-start mb-3 ms-md-3 me-5" alt="team">
+      <img src="./img/team2.jpg" class="col-md-6 float-md-start mb-3 ms-md-3 me-5 rounded-5" alt="team">
       <br>
       <br>
       <br>
@@ -176,56 +140,35 @@
       <br>
       <br>
       <br>
-    
-      
-
       <h3>
         En ITBANK contamos con los mejores asesores para britarte nuestro mejor servicio
       </h3>
-     
-      <p>
-        
-      </p>
-    
-      <p>
-        
-      </p>
     </div>
     <br>
     <br>
     <!--SEGUNDO DESARROLLO-->
-
-
-    <div class="clearfix m-auto" id="text-main">
-      <img src="./img/team.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 ms-4" alt="team">
+    <div class="clearfix m-auto rounded-pill" id="text-main">
+      <img src="./img/team.jpg" class="col-md-6 float-md-end mb-2 ms-md-3 ms-4 rounded-5" alt="team">
       <br>
       <br>
       <br>
       <br>
       <br>
+    <br> 
+      <h3 class="ms-5 pt-4 fs-2 text-light">Superfondos</h3>
+      <div class="container-fluid">
+        <hr>
+      </div>
       <br>
-      <br>
-      
-      
-      
-    
-      
-      
-      <h3 class="ms-5 pt-4 text-light">Superfondos</h3>
-      <br>
-      <p class="ms-5 pt-2 text-light">Invertí de la mano de los que saben. Conocé las alternativas de inversión y cómo operar. </p>
-      
+      <p class="ms-5 pt-2 fs-4 text-light">Invertí de la mano de los que saben. Conocé las alternativas de inversión y cómo operar. </p>
     </div>
   </main>
   <br>
   <br>
   <hr>
-  <!--SEGUNDO DESARROLLO-->
-
-
   <!--TERCER DESARROLLO-->
   <div class="clearfix m-auto">
-    <img src="./img/team3.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 ms-4" alt="team">
+    <img src="./img/team3.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 ms-4 rounded-5" alt="team">
     <br>
       <br>
       <br>
@@ -242,20 +185,14 @@
       <br>
       <br>
       <br>
-      
-     
-      
-     
     <h3 class="ms-5">Tu Banco Digital, siempre
       con vos, estés dónde estés.<h3>
-    
   </div>
   </main>
   <br>
   <hr>
-  <!--TERCER DESARROLLO-->
   <!-- Footer -->
-  <footer class="text-white" style="background-color:#0dcaf0;">
+  <footer class="text-white bg-info rounded-pill text-center">
     <!-- Grid container -->
     <div class="container p-4">
       <p>Siguenos en nuestras redes</p>
@@ -310,166 +247,19 @@
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+          <button type="submit" class="btn bg-white bg-opacity-25 text-white fs-4 rounded-5">Enviar</button>
         </form>
-        <!-- Section: Form -->
-
-        <!-- Section: Text
-    <section class="mb-4">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-        distinctio earum repellat quaerat voluptatibus placeat nam,
-        commodi optio pariatur est quia magnam eum harum corrupti dicta,
-        aliquam sequi voluptate quas.
-      </p>
-    </section>
-    <!-- Section: Text -->
-
-
     </div>
-    <!-- Grid container -->
 
+    <!-- Grid container -->
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+    <div class="text-center p-3 bg-white bg-opacity-25">
       © 2020 Copyright:
       <a class="text-white" href="#">ITBANK</a>
+      Todos los derechos reservados
     </div>
     <!-- Copyright -->
-
   </footer>
-
-
-
-  <!-- Footer -->
-
-  <!--FOOTER START
-    <footer class="footer">
-      <div
-        class="container-fluid bg-info text-white mt-5 py-5 px-sm-3 px-md-5"
-      >
-        <div class="row pt-5">
-          <div class="col-lg-3 col-md-6 mb-5">
-            <a
-              href=""
-              class="navbar-brand"
-            >
-              <span class="text-white fs-1 mb-5">ITBANK</span>
-            </a>
-            <hr>
-            <p>Siguenos en nuestras redes.</p>
-            <div class="d-flex justify-content-start mt-4">
-              <a
-                class="fs-3 me-3 ms-3"
-                href="http://www.twitter.com"
-                target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="fs-3 me-3 ms-3"
-                href="http://www.facebook.com"
-                target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="fs-3 ms-3"
-                href="http://www.instagram.com"
-                target="_blank"
-              >
-                <i class="fab fa-instagram"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5">
-            <h3 class="text-primary mb-4 pb-3">Contactos</h3>
-            <hr>
-            <div class="d-flex">
-              <h4 class="fa fa-map-marker-alt text-primary"></h4>
-              <div class="pl-3">
-                <h5 class="text-white">Direccion</h5>
-                <p>Calle 1234, Cordoba, Argentina</p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <h4 class="fa fa-envelope text-primary"></h4>
-              <div class="pl-3">
-                <h5 class="text-white">Email</h5>
-                <p>itbank@itba.com</p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <h4 class="fa fa-phone-alt text-primary"></h4>
-              <div class="pl-3">
-                <h5 class="text-white">Telefono</h5>
-                <p>+54 351 67890</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5">
-            <h3 class="text-primary mb-4 pb-3">Acesso rapido</h3>
-            <hr>
-            <div class="d-flex flex-column justify-content-start">
-              <a class="text-white mb-2 fs-3" href="#"
-                ><i class="fa fa-angle-right mr-2"></i> Inicio</a
-              >
-              <a class="text-white mb-2 fs-3" href="#"
-                ><i class="fa fa-angle-right mr-2"></i> Servicios</a
-              >
-              <a class="text-white mb-2 fs-3" href="#"
-                ><i class="fa fa-angle-right mr-2"></i> Ayuda</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5">
-            <h3 class="text-primary mb-4 fs-4 pb-3 p-1">¿Tienes algo para contarnos?</h3>
-            <hr>
-            <p>
-              Tienes dudas o recomendacion que hacernos? Dejanos tus datos y nuestro
-              equipo se encargara de contactarte para solucionarlo.
-            </p>
-            <form action="">
-              <label for="name" name="nombre" class="form-group-name">Nombre: </label>
-                <input
-                  type="text"
-                  class="form-control border-0 py-4"
-                  id="name"
-                  placeholder="Tu nombre"
-                  required="required"
-                />
-              <label for="dni">Documento: </label>
-                <input type="tel" name="dni" id="dni" maxlength="9" required="required" placeholder="Tu D.N.I.">
-              </div>
-              <label for="email" required="required">Email: </label>
-                <input
-                  type="email"
-                  class="form-control-email"
-                  id="email"
-                  placeholder="Tu email"
-                  required="required"
-                  autocomplete="email"
-                />
-              <div>
-                <button
-                  class="form-group-button"
-                  type="submit"
-                >
-                  Enviar ahora
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div
-          class="container-fluid pt-5 text-center bg-white"
-        >
-          <p class="">
-            &copy; <a class="text-primary" href="#">ITBANK</a>.
-            Todos los derechos reservados. Diseñado by
-            <a class="text-primary-group" href="#">Grupo 4</a>
-          </p>
-        </div>
-      </div>
-    </footer>
-FOOTER END-->
   <script src="./js/bootstrap.min.js"></script>
 </body>
 
