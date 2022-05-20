@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Banking</title>
+    <title>Registro</title>
     <script
       src="https://kit.fontawesome.com/bfdb86cd47.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
   </head>
   <body class="bg-light">
@@ -20,25 +20,27 @@
             <img src="../img/logo.png" alt="logo">
         </div>
         <br><br>
-        <h1 class="font-weight-bold mb-4 text-center text-white">Bienvenido a nuestro HomeBanking</h1>
+        <h1 class="font-weight-bold mb-4 text-center text-white">Bienvenido a nuestro Home Banking</h1>
         <p class="text-secondary text-center fs-4">En el panel de abajo podras acceder a tu cuenta y realizar todas las operaciones necesarias. Que esperas por probarlo!</p>
       </div>
       <br><br><br>
       <div class="row g-8">
         <div class="col-lg-7 bg-info rounded-5">
             <br>
-            <br>
+            <div class="text-center">
+                <h2 class="text-white">Registrarse</h2>
+            </div>
+            <hr>
           <form>
             <div class="mb-3 text-center rounded-pill">
               <label for="InputUser" class="form-label font-weight-bold fs-5 text-secondary rounded-pill"
                 >Usuario</label
               >
               <input
-                type="email"
+                type="text"
                 class="form-control m-3"
                 id="InputUser"
-                aria-describedby="emailHelp"
-                placeholder="Coloque aquí su usuario"
+                placeholder="Coloque aquí un nombre de usuario"
               />
             </div>
             <div class="mb-3 text-center rounded-pill">
@@ -49,10 +51,20 @@
                 type="number"
                 class="form-control m-3"
                 id="InputDNI"
-                aria-describedby="emailHelp"
                 placeholder="Coloque aquí su número de DNI"
               />
             </div>
+            <div class="mb-3 text-center rounded-pill">
+                <label for="Inputemail" class="form-label font-weight-bold fs-5 text-secondary rounded-pill"
+                  >Correo</label
+                >
+                <input
+                  type="email"
+                  class="form-control m-3"
+                  id="Inputemail"
+                  placeholder="Coloque aquí su correo electronico"
+                />
+              </div>
             <div class="mb-3 text-center rounded-pill">
               <label for="InputPassword" class="form-label font-weight-bold fs-5 text-secondary rounded-pill"
                 >Contraseña</label
@@ -66,7 +78,7 @@
               />
             </div>
             <div class="container ms-2 text-white fs-4">
-              <a href="#">¿No tienes usuario? Registrate!</a>
+              <a href="./login.html" class="text-decoration-none">¿Ya tienes usuario? Ingresa a tu cuenta </a>
             </div>
             <br>
             <div class="mb-3 form-check ms-4 text-center">
@@ -76,12 +88,13 @@
                 id="Check"
               />
               <label class="form-check-label text-secondary" for="Check"
-                >¿Quiere guardar sus datos?</label
+                >Aceptar <a href="#">Terminos y condiciones del servicio</a></label
               >
             </div>
             <div class="text-center">
             <button type="submit" class="btn bg-white bg-opacity-25 text-white fs-5 rounded-5 text-center">Enviar</button>
              </div>
+             <br><br>
           </form>
         </div>
         <div class="col-lg-5">
