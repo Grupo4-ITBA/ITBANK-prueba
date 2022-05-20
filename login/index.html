@@ -30,25 +30,27 @@
             <br>
           <form>
             <div class="mb-3 text-center rounded-pill">
-              <label for="InputEmaill" class="form-label font-weight-bold fs-5 text-secondary rounded-pill"
+              <label for="InputUser" class="form-label font-weight-bold fs-5 text-secondary rounded-pill"
                 >Usuario</label
               >
               <input
                 type="email"
                 class="form-control m-3"
-                id="exampleInputEmaill"
+                id="InputUser"
                 aria-describedby="emailHelp"
+                placeholder="Coloque aquí su usuario"
               />
             </div>
             <div class="mb-3 text-center rounded-pill">
-              <label for="InputUser" class="form-label font-weight-bold fs-5 text-secondary rounded-pill"
+              <label for="InputDNI" class="form-label font-weight-bold fs-5 text-secondary rounded-pill"
                 >D.N.I.</label
               >
               <input
                 type="number"
                 class="form-control m-3"
-                id="exampleInputEmaill"
+                id="InputDNI"
                 aria-describedby="emailHelp"
+                placeholder="Coloque aquí su número de DNI"
               />
             </div>
             <div class="mb-3 text-center rounded-pill">
@@ -58,19 +60,22 @@
               <input
                 type="password"
                 class="form-control m-3"
-                id="Input Password"
+                id="InputPassword"
+                placeholder="Coloque aquí su contraseña"
+                aria-placeholder="asdasdas"
               />
-              <div id="passHelp" class="form-text ms-3 text-light fs-5">
-                Ningun miembro del banco te pedira tus claves de identificacion
-              </div>
             </div>
-            <div class="mb-3 form-check ms-4">
+            <div class="container ms-2 text-white fs-4">
+              <a href="#">¿No tienes usuario? Registrate!</a>
+            </div>
+            <br>
+            <div class="mb-3 form-check ms-4 text-center">
               <input
                 type="checkbox"
-                class="form-check-input text-center"
+                class="form-check-input text-center position-absolute"
                 id="Check"
               />
-              <label class="form-check-label text-secondary" for="exampleCheck1"
+              <label class="form-check-label text-secondary" for="Check"
                 >¿Quiere guardar sus datos?</label
               >
             </div>
@@ -86,5 +91,34 @@
         </div>
       </div>
     </section>
+    <br><br><br>
+      <!--Footer-->
+  <footer class="bg-info text-lg-start rounded-5">
+    <div class="text-center py-4 align-items-center">
+      <p class="text-secondary fs-5">Estas desde el celular? Descaga la app!</p>
+      <hr>
+    <div class="py-4 text-center">
+      <a role="button" class=""
+        href="#" rel="nofollow" target="_blank" rel="noopener noreferrer">
+        <img src="./img/playstore.png" alt="playstore">
+      </a>
+      <a role="button" class="" href="#" target="_blank" rel="noopener noreferrer">
+        <img src="./img/iostore.png" alt="iostore">
+      </a>
+    </div>
+    <br>
+    <hr class="m-0" />
+    <div id="passHelp" class="form-text ms-3 text-light fs-5">
+      ¡No olvides que ningun miembro del banco te pedira tus claves de identificacion!
+    </div>
+   <!-- Copyright -->
+    <div class="text-center text-white p-3 bg-info rounded-pill">
+      © 2020 Copyright:
+      <a class="text-decoration-none" href="../index.html" target="_blank" rel="noopener noreferrer" > ITBANK</a>
+      Todos los derechos reservados
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
   </body>
 </html>
