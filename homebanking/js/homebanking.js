@@ -2,7 +2,7 @@
 var nombreUsuario = "grupo4";
 var saldoCuenta = 8000;
 var montoAnterior = saldoCuenta;
-var limiteExtraccion = 2000;
+var limiteExtraccion = 5000;
 var monto;
 var cotizacionDolar = 20.64;
 //Variables para transferir
@@ -13,31 +13,6 @@ var cuentaAmiga2 = 2;
 var password = 12345;
 var usuarioIntroducido;
 var passwordIntroducida;
-
-iniciarSesion();
-
-function iniciarSesion() {
-
-    usuarioIntroducido = prompt("Ingrese su usuario");
-
-    if (usuarioIntroducido === nombreUsuario) {
-        passwordIntroducida = parseInt(prompt("Ingrese su contraseña"));
-        if (passwordIntroducida === password) {
-            alert("Bienvenido al sistema de Homebanking")
-        } else {
-            alert("Ingrese la contraseña correctamente")
-            iniciarSesion();
-
-        }
-
-    } else {
-        saldoCuenta = 0;
-        alert("No ha ingresado un usuario registrado, ingrese un usuario valido." +
-            "\nHemos congelado tu dinero por seguridad")
-        iniciarSesion();
-    }
-    actualizarSaldoEnPantalla();
-}
 //Ejecución de las funciones que actualizan los valores de las variables en el HTML
 cargarNombreEnPantalla();
 actualizarSaldoEnPantalla();
@@ -54,12 +29,6 @@ function restar(monto) {
 
 //funcion de validación, tanto de monto como de formato.
 
-/*funciona, pero si se ingresa un caracter valido en extracción y deposito, informa el error 
-pero inmediatamente se ejecutan las validaciones de billete de 100 y realiza un 
-deposito/extracción de todas formas. */
-
-// YA FUNCIONAAAAAAAA YAIII
-
 function haySaldo() {
     if (isNaN(monto)) {
         alert("ingrese un monto númerico");
@@ -74,7 +43,6 @@ function haySaldo() {
         }
 } 
 
-
 // Función de extracción de dinero
 
 function extraerDinero() {
@@ -87,7 +55,6 @@ function extraerDinero() {
     }
     actualizarSaldoEnPantalla();
 }
-
 // Función de depósito de dinero
 
 function depositarDinero() {
@@ -100,53 +67,6 @@ function depositarDinero() {
         actualizarSaldoEnPantalla();
     }
 }
-
-
-/*/ Función de cambio de limite
-
-function cambiarLimiteDeExtraccion() {
-    var monto = parseInt(prompt("Ingrese nuevo límite"));
-    if (!isNaN(monto) && monto != null) {
-        limiteExtraccion = monto;
-        alert("El nuevo límite de extracción es " + limiteExtraccion);
-
-        actualizarLimiteEnPantalla();
-
-
-
-    } else
-        alert("Ingrese un caracter valido")
-}
-*/
-
-/*/ Función de pago de servicios
-
-function pagarServicio() {
-    var pago = parseInt(prompt("Ingrese el número que corresponde con el servicio que queres pagar: " + "\n1- Agua" + "\n2- teléfono" + "\n3- Luz" + "\n4- internet"));
-    switch (pago) {
-        case 1:
-            restar(agua);
-            alert("Has depositado " + agua + " correspondientes al servicio de Agua" + "\nsaldo anterior " + montoAnterior + "\nsaldo actual " + saldoCuenta);
-            break;
-        case 2:
-            restar(telefono);
-            alert("Has depositado " + telefono + " correspondientes al servicio de Telefonía" + "\nsaldo anterior " + montoAnterior + "\nsaldo actual " + saldoCuenta);
-            break;
-        case 3:
-            restar(luz);
-            alert("Has depositado " + luz + " correspondientes al servicio de Electricidad" + "\nsaldo anterior " + montoAnterior + "\nsaldo actual " + saldoCuenta);
-            break;
-        case 4:
-            restar(internet);
-            alert("Has depositado " + internet + " correspondientes al servicio de Internet" + "\nsaldo anterior " + montoAnterior + "\nsaldo actual " + saldoCuenta);
-            break;
-        default:
-            alert("Opción incorrecta. Ingrese una de los opciones mostradas en pantalla")
-
-    }
-    actualizarSaldoEnPantalla();
-}
-
 // Función de transferencia de dinero*/
 
 function transferirDinero() {
@@ -187,7 +107,6 @@ function cuentaDolares(){
 	alert("Su cuenta tiene US $ " + cuentaDolares + " (Dólares americanos)")
 
 }
-
 
 //Funciones que actualizan el valor de las variables en el HTML
 function cargarNombreEnPantalla() {
