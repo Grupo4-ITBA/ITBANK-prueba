@@ -9,10 +9,10 @@ var cotizacionDolar = 20.64;
 var cuenta;
 var cuentaAmiga1 = 1;
 var cuentaAmiga2 = 2;
-// variables de inicio de sesion
+/*/ variables de inicio de sesion
 var password = 12345;
 var usuarioIntroducido;
-var passwordIntroducida;
+var passwordIntroducida;*/
 //Variables de pago servicios
 var agua = 700;
 var telefono = 900;
