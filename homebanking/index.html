@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home banking</title>
-</head>
-<body>
+    <title>Home Banking</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+  </head>
+  <nav>
+    <div class="header">
+      <img class="logo" src="../img/logo.png"/>
+    </div>
     
-</body>
+  </nav>
+  <body class="bg-info">
+    <div class="white-container white-container">
+      <div class="menu-container">
+        <h1 class="tu-cuenta">Tu cuenta</h1>
+        <button class="links" onclick="extraerDinero()">Extraer dinero</button>
+        <button class="links" onclick="depositarDinero()"">Depositar dinero</button>
+        <button class="links" onclick="transferirDinero()">Transferir dinero</button>
+      </div>
+      <div class="green-container">
+        <div class="cuenta-info">
+          <p>Saldo en tu cuenta</p>
+          <h3 id="saldo-cuenta">$</h3>
+          <p id="limite-extraccion">Tu límite de extracción es: </p>
+        </div>
+      </div>
+      
+    </div>
+    <script src="./js/homebanking.js"></script>
+  </body>
 </html>
