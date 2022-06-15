@@ -16,8 +16,8 @@ a {
   margin-right: 70px;
 }
 .main h1 {
-    display: flex;
-    margin-left: 20px;
+  display: flex;
+  margin-left: 20px;
 }
 .main span {
   margin-left: 15px;
@@ -31,4 +31,10 @@ a {
 
 #text-main {
   background-color: #0dcaf0;
+}
+
+.tercerDesarrollo {
+  background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
 }
