@@ -1,13 +1,16 @@
 const createElement = infoDollar => {
-  const elementList = document.getElementById('list-group');
-  elementList.innerHTML += ` 
-  <div class="col ">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">${infoDollar.nombre}</h5>
-      <small class="buy mb-1"><strong>Compra:</strong>${infoDollar.compra}</small>
-      <small class="sell"><strong>Venta:</strong> ${infoDollar.venta}</small>
-    </div>
+  const element = document.getElementById('newCard');
+  element.innerHTML += `   
+  <div
+  class="align-items-center w-40 mt-4 mh-20"
+  data-aos="zoom-in"
+  data-aos-delay="300"
+>
+  <div class="icon-box">
+    <div class="icon"><i class="bx bx-tachometer"></i></div>
+    <h4><a href="">${infoDollar.nombre}</a></h4>
+    <small class="buy mb-1"><strong>Compra:</strong>${infoDollar.compra}</small>
+    <small class="sell"><strong>Venta:</strong> ${infoDollar.venta}</small>
   </div>
 </div>`;
 };

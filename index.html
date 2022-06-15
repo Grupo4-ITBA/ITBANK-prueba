@@ -8,6 +8,7 @@
   <script src="https://kit.fontawesome.com/bfdb86cd47.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/assets/css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -69,35 +70,21 @@
   </nav>
   <!-- Navbar -->
   <main class="main">
-    <div class="py-4 mt-4 ">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="">¡Te damos la bienvenida!</h3>
-            </div>
+    <section id="services" class="services section-bg">
+        <div class="section-title">
+          <h2>Cotización Dolar</h2>
+          <div id="newCard" class="list-group mx-4 mw-20 ">  
+            <button id="loading" class="btn btn-primary" type="button" disabled>
+              <span
+                class="spinner-border spinner-border-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              Loading...
+            </button>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="card">
-            <div class="card-body">
-              <h4>CAMBIO DOLAR HOY</h4>
-              <div id="list-group" class="list-group mx-4 mw-50 row">  
-                <button id="loading" class="btn btn-primary" type="button" disabled>
-                  <span
-                    class="spinner-border spinner-border-sm"
-                    role="status"
-                    aria-hidden="true"
-                  ></span>
-                  Loading...
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
     <div id="carouselExampleIndicators" class="carousel slide m-3 d-block" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-black"
