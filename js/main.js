@@ -50,9 +50,9 @@ function getInformation() {
     .then(data => {
       document.getElementById('loading').hidden = true;
       data.forEach(element => {
-        console.log(element.casa);
         if (element.casa.compra != 'No Cotiza') {
           createElement(element.casa);
+          console.log(element.casa)
         }
       });
     });
