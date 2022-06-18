@@ -3,14 +3,13 @@
 Hola somos el grupo 4!
 
 Sus integrantes son:
-- Bustos, Candela
+- Sicre, Florencia
 - Quiroga, Brian Leonardo
-- Strickler Peredo, Valentina
+- Lorenzo, Jesus Lara
 - Viera, Thiago
 
-Para el Sprint 1, hicimos la pagina principal de ITBANK y la página de ingreso de Home Banking. 
-
-Trabajamos con html, css, JS del cual utilizamos un codigo base y luego modificamos y Bootstrap para hacer las páginas. Utilizamos los recursos de icon-icons y flaticon para algunos de los íconos.   
+Para el Sprint 3, en un nueva branch añadimos a la pagina del ITBANK una seccion de cotizaciones del dolar consumiendo una API.
+En esta ocasion hicimos uso de todas las herramientas que obtuvimos durante la cursada para darle una buena imagen y funcionalidad a la nueva seccion de la pagina.
 
 
 
