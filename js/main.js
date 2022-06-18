@@ -12,12 +12,12 @@ const createElement = infoDollar => {
   elementList.innerHTML += ` 
     <div class="col ">
       <div class="card">
-        <div class="card-header text-bg-dark mb-3">
+        <div class="card-header bg-info text-light text-center mb-3">
         ${infoDollar.nombre}
         </div>
         <div class="card-body">
         <div class="row">
-          <div class="col-8" >
+           <div class="col-8 text-secondary">
               <p>Compra: ${infoDollar.compra} </p> 
               <p>Venta: ${infoDollar.venta} </p> 
             </div>
@@ -25,7 +25,7 @@ const createElement = infoDollar => {
             </div>
           </div>
         </div>
-        <div class="card-footer text-muted">
+        <div class="card-footer text-secondary bg-info bg-opacity-10 text-center">
             Ultima Consulta: ${today}
           </div>
       </div>
